@@ -1,0 +1,18 @@
+[
+    {
+        "titre": "titre",
+        "entreprise": "entreprise",
+        "dateDebut": "lundi",
+        "dateFin": "vendredi",
+        "contexte": "c'est un contexte",
+        "competences": [
+            "languages",
+            "methodologies",
+            "outils applications"
+        ],
+        "realisations": [
+            "real1",
+            "real2"
+            ]
+    }
+]
