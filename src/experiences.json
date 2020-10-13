@@ -2,8 +2,10 @@
     {
         "titre": "Consultant",
         "entreprise": "Amaris",
-        "dateDebut": "2020-02-01T00:00:00.511Z",
-        "dateFin": "2020-04-01T00:00:00.511Z",
+        "dates": {
+            "debut": "2020-02-01T00:00:00.511Z",
+            "fin": "2020-03-15T00:00:00.511Z"
+        },
         "contexte": "Consultant chez Amadeus, j'ai travaillé sur un outil de suivi et l'alerte de voyageur en temps réel. Dans une équipe de 6 personnes, ma principale réalisation a été de résoudre les problèmes soulevés par un audit de sécurité.",
         "competences": {
                 "languages": [
@@ -24,13 +26,15 @@
             "Full Stack Engineer",
             "DevOps"
         ],
-        "logoUrl" :"https://www.flightdirectors.com/images/gds/amadeus.png"
+        "logoUrl" :"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Logo_Amaris.png/1200px-Logo_Amaris.png"
     },
     {
         "titre": "Consultant",
         "entreprise": "Amaris",
-        "dateDebut": "2019-04-01T00:00:00.511Z",
-        "dateFin": "2020-01-01T00:00:00.511Z",
+        "dates": {
+            "debut": "2019-04-01T00:00:00.511Z",
+            "fin": "2020-01-01T00:00:00.511Z"
+        },
         "contexte": "Consultant chez Amadeus, j'ai participé à l'amélioration du logiciel excisant. Il s'agit d'un ERP à destination des chaînes d’hôtels. C'était un projet d'envergure comprenant une centaine d’ingénieurs répartit en équipe d'environ 7 personnes. Mon équipe était en charge de la gestion des utilisateurs. La plus grosse tache sur laquelle j'ai travaillé est la modification du système d'autorisation, il fallait passer de rôle d'utilisation à une version plus granulaire, avec une permission pour chaque action.",
         "competences": {
                 "languages": [
@@ -50,13 +54,15 @@
             "Full Stack Engineer",
             "Référent Front-End de l'équipe"
         ],
-        "logoUrl" :"https://www.flightdirectors.com/images/gds/amadeus.png"
+        "logoUrl" :"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Logo_Amaris.png/1200px-Logo_Amaris.png"
     },
     {
         "titre": "Stage Apprenti Ingénieur - DevOps",
         "entreprise": "Arcelor Mittal",
-        "dateDebut": "2017-08-01T00:00:00.511Z",
-        "dateFin": "2018-01-01T00:00:00.511Z",
+        "dates": {
+            "debut": "2017-08-01T00:00:00.511Z",
+            "fin": "2018-01-01T00:00:00.511Z"
+        },
         "contexte": "Lors de ce stage, j'ai réalisé un outil d'aide au suivi de la production d'une des lignes de l'entreprise. J'ai fait seul toutes les étapes du projet, de l'identification du besoin, la conception du produit, le développement, les phases de test, la formation des utilisateurs et la maintenance.",
         "competences": {
                 "languages": [

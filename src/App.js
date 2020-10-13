@@ -31,10 +31,10 @@ const App = (props) => {
   return (
     <div>
       <div className="left-button button">
-        <Button handler={onPreviousExperience} />
+        <Button onClick={onPreviousExperience} />
       </div>
       <div className="right-button rotate button">
-        <Button handler={onNextExperience} />
+        <Button onClick={onNextExperience} />
       </div>
       <div className="center">
         <Experience experience={currentExperience} />

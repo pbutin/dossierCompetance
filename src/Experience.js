@@ -1,6 +1,7 @@
 import React from 'react';
-import './Experience.css';
+import Dates from './Dates';
 
+import './Experience.css';
 
 const Experience = (props) => {
   return (
@@ -12,11 +13,13 @@ const Experience = (props) => {
           <p> {props.experience.entreprise} </p>
         </div>
       </div>
+      <Dates dates={props.experience.dates} />
       <p> {props.experience.dateDebut} </p>
       <p> {props.experience.dateFin} </p>
       <p> {props.experience.contexte} </p>
       <p> {props.experience.competences.languages} </p>
       <p> {props.experience.realisations} </p>
+      <p className="clear"></p>
     </div>
   );
 }

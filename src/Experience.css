@@ -3,6 +3,10 @@
 	float: left;
 }
 
+.clear {
+	clear : left;
+}
+
 .header {
 	min-height: 25vh;
 }

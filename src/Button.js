@@ -3,7 +3,7 @@ import './Button.css';
 
 const Button = (props) => {
 	return (
-		  <div className="block button-background" onClick={props.handler}>
+		  <div className="block button-background" onClick={props.onClick}>
 		  </div>
 	);
 }
