@@ -1,10 +1,10 @@
 import React from 'react';
+import './Button.css';
 
 class Button extends React.Component {
   render() {
     return (
-      <div className="block" onClick={this.props.handler}>
-        <p>{this.props.name}</p>
+      <div className="block button-background" onClick={this.props.handler}>
       </div>
     ) 
   }

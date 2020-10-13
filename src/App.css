@@ -1,0 +1,19 @@
+.left {
+	float: left;
+}
+
+.center {
+    width:80%;
+    margin-left: 10%;
+}
+
+.right {
+	float: right;
+	transform: rotate(180deg);
+}
+
+.button {
+	width: 10vmax;
+	height: 10vmax;
+	margin-top: 40vh;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 import Button from './Button';
 import Experience from './Experience';
@@ -34,10 +35,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="block" >
-        <Button handler={this.handlerPreviousExperience} name="Experience précedente"/>
-        <Experience experience={experiences[experienceIndex]} />
-        <Button handler={this.handlerNextExperience} name="Experience suivante"/>
+      <div>
+        <div className="left button">
+          <Button handler={this.handlerPreviousExperience} />
+        </div>
+        <div className="right button">
+          <Button handler={this.handlerNextExperience} />
+        </div>
+        <div className="center">
+          <Experience experience={experiences[experienceIndex]} />
+        </div>
       </div>
     ) 
   }
