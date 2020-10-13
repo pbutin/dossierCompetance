@@ -7,47 +7,40 @@ import Experience from './Experience';
 import experiences from './experiences.json';
 
 
-let experienceIndex = 0; 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.handlerNextExperience = this.handlerNextExperience.bind(this);
-    this.handlerPreviousExperience = this.handlerPreviousExperience.bind(this);
-  }
+const App = (props) => {
 
-  handlerNextExperience() {
-    if(typeof experiences[experienceIndex+1] !== 'undefined') {
-      experienceIndex++;
-      this.setState({
-        clicked: true
-      });
+  // Hooks
+  const [experienceIndex, setExperience] = React.useState(0);
+
+  // Setup
+  const currentExperience = experiences[experienceIndex];
+
+  // Handlers
+  const onNextExperience = () => {
+    if (experienceIndex < experiences.length - 1) {
+      setExperience(experienceIndex + 1);
     }
   }
 
-  handlerPreviousExperience() {
-    if(typeof experiences[experienceIndex-1] !== 'undefined') {
-      experienceIndex--;
-      this.setState({
-        clicked: true
-      });
+  const onPreviousExperience = () => {
+    if (experienceIndex > 0) {
+      setExperience(experienceIndex - 1);
     }
   }
 
-  render() {
-    return (
-      <div>
-        <div className="left-button button">
-          <Button handler={this.handlerPreviousExperience} />
-        </div>
-        <div className="right-button rotate button">
-          <Button handler={this.handlerNextExperience} />
-        </div>
-        <div className="center">
-          <Experience experience={experiences[experienceIndex]} />
-        </div>
+  return (
+    <div>
+      <div className="left-button button">
+        <Button handler={onPreviousExperience} />
       </div>
-    )
-  }
+      <div className="right-button rotate button">
+        <Button handler={onNextExperience} />
+      </div>
+      <div className="center">
+        <Experience experience={currentExperience} />
+      </div>
+    </div>
+  );
 }
 
 export default App;
