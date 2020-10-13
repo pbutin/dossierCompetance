@@ -36,17 +36,17 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="left button">
+        <div className="left-button button">
           <Button handler={this.handlerPreviousExperience} />
         </div>
-        <div className="right button">
+        <div className="right-button rotate button">
           <Button handler={this.handlerNextExperience} />
         </div>
         <div className="center">
           <Experience experience={experiences[experienceIndex]} />
         </div>
       </div>
-    ) 
+    )
   }
 }
 

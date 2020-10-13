@@ -1,0 +1,14 @@
+.brand-logo {
+	max-width: 20em;
+	float: left;
+}
+
+.header {
+	min-height: 25vh;
+}
+
+.right-header {
+	margin-top: 15px;
+	margin-left: 3em;
+	float: left;
+}
