@@ -1,10 +1,9 @@
-'use strict';
 import React from 'react';
 
 class Experience extends React.Component {
   render() {
     return (
-      <div class="block">
+      <div className="block">
         <h1> {this.props.experience.titre} </h1>
         <h2> {this.props.experience.entreprise} </h2>
         <h4> {this.props.experience.dateDebut} </h4>
@@ -14,7 +13,7 @@ class Experience extends React.Component {
         <p> {this.props.experience.realisations} </p>
       </div>
     ) 
-  }
+  }    
 }
 
 export default Experience;
