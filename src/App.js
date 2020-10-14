@@ -8,7 +8,6 @@ import experiences from './experiences.json';
 
 
 const App = (props) => {
-
   // Hooks
   const [experienceIndex, setExperience] = React.useState(0);
 

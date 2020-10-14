@@ -1,24 +1,22 @@
 import React from 'react';
+import Competences from "./Competences";
 import Dates from './Dates';
+import Details from './Details';
+import Header from './Header';
 
 import './Experience.css';
 
 const Experience = (props) => {
   return (
     <div className="block">
-      <div className="header block">
-        <img className="brand-logo block" src={props.experience.logoUrl} alt="brand logo"></img>
-        <div className="right-header block">
-          <p> {props.experience.titre} </p>
-          <p> {props.experience.entreprise} </p>
-        </div>
+      <Header experience={props.experience} />
+      <div className="left">
+        <Dates dates={props.experience.dates} />
+        <Competences competences={props.experience.competences}/>
       </div>
-      <Dates dates={props.experience.dates} />
-      <p> {props.experience.dateDebut} </p>
-      <p> {props.experience.dateFin} </p>
-      <p> {props.experience.contexte} </p>
-      <p> {props.experience.competences.languages} </p>
-      <p> {props.experience.realisations} </p>
+      <div className="right">
+        <Details experience={props.experience} />
+      </div>
       <p className="clear"></p>
     </div>
   );

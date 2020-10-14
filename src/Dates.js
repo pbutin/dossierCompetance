@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Dates.css';
-
 const Dates = (props) => {
   const startDate = Date.parse(props.dates.debut);
   const endDate = Date.parse(props.dates.fin);
@@ -20,8 +18,8 @@ const Dates = (props) => {
   };
 
   return (
-    <div className="block date-holder">
-      <h4>Durée</h4>
+    <div className="block">
+      <h4>Durée:</h4>
       <h5>{duration(startDate, endDate)} MOIS</h5>
       <p>De {format(startDate)}</p>
       <p>À {format(endDate)}</p>

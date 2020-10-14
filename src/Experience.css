@@ -16,3 +16,12 @@
 	margin-left: 3em;
 	float: left;
 }
+
+.left {
+	width: 15em;
+	float: left;
+}
+
+.right {
+	margin-left: 18em;
+}

@@ -15,14 +15,14 @@
                 "methodologies": [
                     "Agile"
                 ],
-                "outils - applications": [
+                "outilsAndApplications": [
                     "Bitbucket",
                     "Jenkins",
                     "Confluence",
                     "Git"
                 ]
         },
-        "realisations": [
+        "roles": [
             "Full Stack Engineer",
             "DevOps"
         ],
@@ -44,13 +44,13 @@
                 "methodologies": [
                     "Agile - sAFE"
                 ],
-                "outils - applications": [
+                "outilsAndApplications": [
                     "Microsoft Azure",
                     "Confluence",
                     "Git"
                 ]
         },
-        "realisations": [
+        "roles": [
             "Full Stack Engineer",
             "Référent Front-End de l'équipe"
         ],
@@ -71,10 +71,10 @@
                 "methodologies": [
                     "Agile"
                 ],
-                "outils - applications": [
+                "outilsAndApplications": [
                 ]
         },
-        "realisations": [
+        "roles": [
         ],
         "logoUrl" :"https://upload.wikimedia.org/wikipedia/fr/f/f4/Logo_ArcelorMittal.svg"
     }
