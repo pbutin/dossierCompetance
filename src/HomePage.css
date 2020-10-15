@@ -1,4 +1,8 @@
 .experience {
-	float: left;
 	width: 20vw;
+}
+
+.experiences {
+	 display: flex;
+	justify-content: space-around;
 }

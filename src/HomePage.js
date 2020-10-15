@@ -23,13 +23,15 @@ const HomePage = (props) => {
       </div>
       <div>
         <p>Mes experiences:</p>
-        {experiences.map((experience, i) => (
-          <div className="block clickable experience" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
-            <p>{experience.titre}</p>
-            <p>{experience.entreprise}</p>
-            <p>{parseAndFormat(experience.dates.debut)} - {parseAndFormat(experience.dates.fin)}</p>
-          </div>
-        ))}
+        <div className="experiences">
+          {experiences.map((experience, i) => (
+            <div className="block clickable experience" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
+              <p>{experience.titre}</p>
+              <p>{experience.entreprise}</p>
+              <p>{parseAndFormat(experience.dates.debut)} - {parseAndFormat(experience.dates.fin)}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
