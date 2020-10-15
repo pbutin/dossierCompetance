@@ -28,12 +28,12 @@ const Experiences = (props) => {
 
   return (
     <div>
-      <i onClick={props.onClose} className="material-icons icon">close</i>
+      <i onClick={props.onClose} className="material-icons icon-large clickable">close</i>
       <div className="left-button button" onClick={onPreviousExperience}>
-        <i className="material-icons icon">keyboard_arrow_left</i>
+        <i className="material-icons icon-large clickable">keyboard_arrow_left</i>
       </div>
       <div className="right-button button" onClick={onNextExperience}>
-        <i className="material-icons icon">navigate_next</i>
+        <i className="material-icons icon-large clickable">navigate_next</i>
       </div>
       <div className="center">
         <Experience experience={currentExperience} />

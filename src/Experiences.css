@@ -17,7 +17,6 @@
 	position: fixed;
 }
 
-.icon {
+.icon-large {
   	font-size: 6vmax;
-  	cursor: pointer;
 }

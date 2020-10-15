@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './App.css';
+
 import Experiences from './Experiences';
 import HomePage from './HomePage';
 
