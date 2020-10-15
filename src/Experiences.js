@@ -9,7 +9,7 @@ import experiences from './experiences.json';
 
 const Experiences = (props) => {
   // Hooks
-  const [experienceIndex, setExperience] = React.useState(0);
+  const [experienceIndex, setExperience] = React.useState(props.experienceIndex);
 
   // Setup
   const currentExperience = experiences[experienceIndex];

@@ -15,9 +15,8 @@ const HomePage = (props) => {
 
   return (
     <div>
-    <div onClick={props.onDisplayExperience}> one div </div>
-     {experiences.map(experience => (
-        <div className="block">
+     {experiences.map((experience, i) => (
+        <div className="block" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
           <p>{experience.titre}</p>
           <p>{experience.entreprise}</p>
           <p>{parseAndFormat(experience.dates.debut)} - {parseAndFormat(experience.dates.fin)}</p>
