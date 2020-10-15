@@ -12,15 +12,12 @@
 
 }
 
-.rotate {
-	transform: rotate(180deg);
-}
-
 .button {
-	width: 10vmax;
-	height: 10vmax;
-	max-height: 80px;
-	max-width: 80px;
 	margin-top: 40vh;
 	position: fixed;
+}
+
+.icon {
+  	font-size: 6vmax;
+  	cursor: pointer;
 }

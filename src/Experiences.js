@@ -1,7 +1,6 @@
 import React from 'react';
 import './Experiences.css';
 
-import Button from './Button';
 import Experience from './Experience';
 
 import experiences from './experiences.json';
@@ -29,12 +28,12 @@ const Experiences = (props) => {
 
   return (
     <div>
-      <div onClick={props.onClose}>Close</div>
-      <div className="left-button button">
-        <Button onClick={onPreviousExperience} />
+      <i onClick={props.onClose} className="material-icons icon">close</i>
+      <div className="left-button button" onClick={onPreviousExperience}>
+        <i className="material-icons icon">keyboard_arrow_left</i>
       </div>
-      <div className="right-button rotate button">
-        <Button onClick={onNextExperience} />
+      <div className="right-button button" onClick={onNextExperience}>
+        <i className="material-icons icon">navigate_next</i>
       </div>
       <div className="center">
         <Experience experience={currentExperience} />
