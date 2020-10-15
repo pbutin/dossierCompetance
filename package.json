@@ -1,6 +1,6 @@
 {
   "name": "dossier-competences",
-  "homepage": "http://competences.pbutin.fr/",
+  "homepage": "http://dossier-competences.pbutin.fr/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "echo competences.pbutin.fr > ./build/CNAME && gh-pages -d build"
+    "deploy": "echo dossier-competences.pbutin.fr > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
