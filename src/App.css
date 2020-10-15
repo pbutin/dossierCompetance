@@ -3,12 +3,13 @@
 }
 
 .center {
-    width:80%;
-    margin-left: 10%;
+    width:74vmax;
+    margin-left: 13vmax;
 }
 
 .right-button {
-	float: right;
+     right: 0; 
+
 }
 
 .rotate {
@@ -21,4 +22,5 @@
 	max-height: 80px;
 	max-width: 80px;
 	margin-top: 40vh;
+	position: fixed;
 }
