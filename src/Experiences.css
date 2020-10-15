@@ -1,0 +1,26 @@
+.left-button {
+	float: left;
+}
+
+.center {
+    width:74vmax;
+    margin-left: 13vmax;
+}
+
+.right-button {
+     right: 0; 
+
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+.button {
+	width: 10vmax;
+	height: 10vmax;
+	max-height: 80px;
+	max-width: 80px;
+	margin-top: 40vh;
+	position: fixed;
+}
