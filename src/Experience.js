@@ -1,7 +1,7 @@
 import React from 'react';
 import Competences from "./Competences";
+import Contexte from './Contexte';
 import Dates from './Dates';
-import Details from './Details';
 import Header from './Header';
 
 import './Experience.css';
@@ -15,7 +15,7 @@ const Experience = (props) => {
         <Competences competences={props.experience.competences}/>
       </div>
       <div className="right">
-        <Details experience={props.experience} />
+        <Contexte experience={props.experience} />
       </div>
       <p className="clear"></p>
     </div>

@@ -1,32 +1,13 @@
 import React from 'react'
+import Liste from './Liste'
 
 const Competences = (props) => {
   return (
-    <div>
-      <div className="block">
-        <h5>Languages et framework:</h5>
-          {props.competences.languages.map(language => (
-              <li key={language}>
-                {language}
-              </li>
-            ))}
-      </div>
-      <div className="block">
-        <h5>Méthodologies:</h5>
-          {props.competences.methodologies.map(methodologie => (
-              <li key={methodologie}>
-                {methodologie}
-              </li>
-            ))}
-      </div>
-      <div className="block">
-        <h5>Outils & Applications:</h5>
-          {props.competences.outilsAndApplications.map(outil => (
-              <li key={outil}>
-                {outil}
-              </li>
-            ))}
-      </div>
+    <div className="block">
+      <h4>Compétences</h4>
+      <Liste title="Languages et framework:" items={props.competences.languages} />
+      <Liste title="Méthodologies:" items={props.competences.methodologies} />
+      <Liste title="Outils & Applications:" items={props.competences.outilsAndApplications} />
     </div>
   );
 }

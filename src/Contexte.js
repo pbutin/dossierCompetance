@@ -1,15 +1,16 @@
 import React from 'react';
+import Liste from './Liste';
 
-const Details = (props) => {
+const Contexte = (props) => {
   return (
     <div className="block">
       <div className="block">
       	<h3> Contexte:</h3>
       	<p> {props.experience.contexte} </p>
       </div>
-      <p> {props.experience.realisations} </p>
+      <Liste title="Rôles & Réalisations:" items={props.experience.roles} />
     </div>
   );
 }
 
-export default Details;
+export default Contexte;
