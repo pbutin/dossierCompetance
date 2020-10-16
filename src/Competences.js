@@ -3,7 +3,7 @@ import Liste from './Liste'
 
 const Competences = (props) => {
   return (
-    <div className="block border">
+    <div className="block border padding15">
       <h4>Compétences</h4>
       <Liste title="Languages et framework:" items={props.competences.languages} />
       <Liste title="Méthodologies:" items={props.competences.methodologies} />
