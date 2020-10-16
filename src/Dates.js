@@ -1,22 +1,25 @@
 import React from 'react';
 
 const Dates = (props) => {
-  const startDate = Date.parse(props.dates.debut);
-  const endDate = Date.parse(props.dates.fin);
+  const startDate = props.dates.debut;
+  const endDate = props.dates.fin;
 
   const format = (date) => {
     return new Intl.DateTimeFormat("fr-FR", {
           year: "numeric",
           month: "long"
-        }).format(date)
+        }).format(Date.parse(date))
   };
 
   const duration = (startDate, endDate) => {
     return new Intl.DateTimeFormat("fr-FR", {
           month:"numeric"
-        }).format(Math.abs(endDate - startDate));
+        }).format(Math.abs(Date.parse(endDate) - Date.parse(startDate)));
   };
 
+  if(startDate === "") {
+    return null;
+  }
   return (
     <div className="block">
       <h4>Durée:</h4>

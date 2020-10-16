@@ -1,8 +1,11 @@
 .experience {
 	width: 20vw;
+	padding: 5px;
+	margin: 20px;
 }
 
 .experiences {
-	 display: flex;
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 }

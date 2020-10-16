@@ -1,18 +1,12 @@
 import React from 'react';
 import './HomePage.css';
 
+import DatesHomePage from './DatesHomePage';
+
 import experiences from './experiences.json';
 
 
 const HomePage = (props) => {
-
-  const parseAndFormat = (date) => {
-    const parsedDate = Date.parse(date);
-    return new Intl.DateTimeFormat("fr-FR", {
-          year: "2-digit",
-          month: "2-digit"
-        }).format(parsedDate);
-  };
 
   return (
     <div>
@@ -28,7 +22,7 @@ const HomePage = (props) => {
             <div className="block clickable experience" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
               <p>{experience.titre}</p>
               <p>{experience.entreprise}</p>
-              <p>{parseAndFormat(experience.dates.debut)} - {parseAndFormat(experience.dates.fin)}</p>
+              <DatesHomePage debut={experience.dates.debut} fin={experience.dates.fin}/>
             </div>
           ))}
         </div>
