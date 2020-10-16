@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => {
   return (
-    <div className="header block">
+    <div className="header block border">
       <img className="brand-logo block" src={props.experience.logoUrl} alt="brand logo"></img>
       <div className="right-header block">
         <p> {props.experience.titre} </p>

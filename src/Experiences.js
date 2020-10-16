@@ -47,7 +47,7 @@ const Experiences = (props) => {
       <Bouton onClick={onPreviousExperience} canPressNext={canPressPrevious()} icon="keyboard_arrow_left" button="left-button"/>
       <Bouton onClick={onNextExperience} canPressNext={canPressNext()} icon="keyboard_arrow_right" button="right-button"/>
 
-      <div className="center">
+      <div className="center border">
         <Experience experience={currentExperience} />
       </div>
     </div>

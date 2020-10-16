@@ -19,7 +19,7 @@ const HomePage = (props) => {
         <p>Mes experiences:</p>
         <div className="experiences">
           {experiences.map((experience, i) => (
-            <div className="block clickable experience" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
+            <div className="block clickable experience border" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
               <p>{experience.titre}</p>
               <p>{experience.entreprise}</p>
               <DatesHomePage debut={experience.dates.debut} fin={experience.dates.fin}/>
