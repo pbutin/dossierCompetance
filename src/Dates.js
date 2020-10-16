@@ -22,8 +22,7 @@ const Dates = (props) => {
   }
   return (
     <div className="block border padding15">
-      <h4>Durée:</h4>
-      <h5>{duration(startDate, endDate)} MOIS</h5>
+      <h4>Durée: {duration(startDate, endDate)} MOIS</h4>
       <p>De {format(startDate)}</p>
       <p>À {format(endDate)}</p>
     </div>

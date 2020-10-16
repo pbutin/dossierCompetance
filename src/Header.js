@@ -5,8 +5,8 @@ const Header = (props) => {
     <div className="header block border">
       <img className="brand-logo block" src={props.experience.logoUrl} alt="brand logo"></img>
       <div className="right-header block">
-        <p> {props.experience.titre} </p>
-        <p> {props.experience.entreprise} </p>
+        <h1> {props.experience.titre} </h1>
+        <h3> {props.experience.entreprise} </h3>
       </div>
     </div>
   );
