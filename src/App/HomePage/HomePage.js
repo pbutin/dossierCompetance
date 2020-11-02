@@ -3,7 +3,7 @@ import './HomePage.css';
 
 import ExperienceMini from './ExperienceMini';
 
-import experiences from './experiences.json';
+import experiences from '../../experiences.json';
 
 
 const HomePage = (props) => {
