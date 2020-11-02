@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css';
 
-import DatesHomePage from './DatesHomePage';
+import ExperienceMini from './ExperienceMini';
 
 import experiences from './experiences.json';
 
@@ -19,11 +19,7 @@ const HomePage = (props) => {
         <p>Mes experiences:</p>
         <div className="experiences">
           {experiences.map((experience, i) => (
-            <div className="block clickable experience border" key={i} onClick={() => {props.updateExperienceIndex(i)}}>
-              <p className="bold">{experience.titre}</p>
-              <p>{experience.entreprise}</p>
-              <DatesHomePage debut={experience.dates.debut} fin={experience.dates.fin}/>
-            </div>
+            <ExperienceMini key={i} i={i} experience={experience} updateExperienceIndex={(i) => props.updateExperienceIndex(i)}/>
           ))}
         </div>
       </div>
