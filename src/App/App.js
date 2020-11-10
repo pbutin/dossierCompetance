@@ -2,12 +2,12 @@ import React from 'react';
 
 import './App.css';
 
-import Experiences from './Experiences';
-import HomePage from './HomePage';
+import Experiences from './ExperiencePage/Experiences';
+import HomePage from './HomePage/HomePage';
 
 
 const App = (props) => {
-
+  
   // Hooks
   const [displayExperience, setDisplayExperience] = React.useState(false);
   const [experienceIndex, setExperienceIndex] = React.useState(0);

@@ -13,7 +13,6 @@ const HomePage = (props) => {
       <div>
         <h1>FULL STACK ENGINEER</h1>
         <h2>2 ans d'expérience</h2>
-        <h4>Je suis quelqu'un de curieux, sportif et surtout passionné de nouvelles technologies.</h4>
       </div>
       <div>
         <p>Mes experiences:</p>

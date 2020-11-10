@@ -2,9 +2,9 @@ import React from 'react';
 import './Experiences.css';
 
 import Bouton from './Bouton';
-import Experience from './Experience';
+import Experience from './Experience/Experience';
 
-import experiences from './experiences.json';
+import experiences from '../../experiences.json';
 
 
 const Experiences = (props) => {
