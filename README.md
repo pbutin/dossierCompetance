@@ -1,4 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link [http://dossier-competences.pbutin.fr](http://dossier-competences.pbutin.fr)
+
+## The Project
+
+This projet was my first using React.
+It is an app to list all my professional experiences
 
 ## Available Scripts
 
@@ -11,6 +17,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+### `npm run deploy`
+
+Deploy the app.<br />
+Open [http://dossier-competences.pbutin.fr](http://dossier-competences.pbutin.fr) to view it in the browser.
 
 ### `npm test`
 
